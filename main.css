@@ -2,3 +2,12 @@ body {
 	background-image: url(green_wallpaper_1920x1200.jpg);
 	background-size: cover;
 }
+
+.name {
+	padding-top: 50px;
+	margin: auto;
+	width: 120px;
+	font-family: 'Lobster', cursive;
+	font-size: 78px;
+	color: white;
+}
