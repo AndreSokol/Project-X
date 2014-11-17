@@ -29,3 +29,11 @@ body {
 	margin-left: 20%;
 	font-size: 1.5em;
 }
+
+div.pic {
+	height: 1000px;
+	width: 800px;
+	border-style: solid;
+	border-width: 200px;
+	border-image: url("final_s.png") 94 round round;
+}
