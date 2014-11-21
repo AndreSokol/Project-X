@@ -1,39 +1,23 @@
 body {
-	background-image: url(bg2.jpg);
-	/*background-size: cover;*/
+	background-image: url(../background.jpg);
+	background-size: cover;
 	margin: 0;
-	color: white;
 }
 
-.name {
-	font-family: 'Lobster', cursive;
-	padding-top: 50px;
+div.outer_container {
+	margin: 0;
+	width: 100%;
+}
+
+div.outer_container div {
 	margin: auto;
-	width: 450px;
-	font-size: 4em;
+	background-color: rgba(0, 0, 0, 0)!important;
 }
 
-.btn {
-	font-family: 'Open Sans', sans-serif;
-	margin-top: 5%;
-	width: 33%;
-	display: inline-block;
-	text-align: center;
-	font-size: 2.5em;
-}
-
-.about {
-	font-family: "Open Sans", sans-serif;
-	margin-top: 3%;
-	width: 60%;
-	margin-left: 20%;
-	font-size: 1.5em;
-}
-
-div.pic {
-	height: 1000px;
-	width: 800px;
-	border-style: solid;
-	border-width: 200px;
-	border-image: url("final_s.png") 94 round round;
+div.make_bg_cool {
+	position: absolute;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
 }
