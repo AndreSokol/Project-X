@@ -1,0 +1,134 @@
+            *{
+                margin: 0;
+            }
+            
+            body {
+                owerflow: scroll;
+                height: 100%;
+            }
+            
+            .bc-img {
+                height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-image: url("background.jpg");
+            }
+            
+            .header {
+                width: 100%;position: fixed;left: 0;
+                top: 40%;
+                color: white;
+                text-align: center;
+            }
+        
+            h1 {
+                font-size: 3.5em;
+                font-family: Arial;
+                color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            }
+            
+            .information {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                height: 110%;
+                width: 100%;
+            }
+            
+            h2 {
+                font-family: 'Roboto Slab', serif;
+                font-size: 2.5em;
+                margin-bottom: 5%;
+            }
+
+            h3 {
+                font-size: 2em;
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            red {
+                color: red;
+            }
+
+            .inner-wrapper-5 {
+                margin: 5%;
+            }
+
+            hr {
+                margin-top: 2.5%;
+            }
+
+            p {
+                font-size: 0.9em;
+                font-family: arial;
+            }
+
+            .photo-wrap {
+                position: absolute;
+                top: 15%;
+                left: 65%;
+                font-size: 2.5em;
+                text-align: center;
+                font-family: 'Lobster', cursive;
+            }
+
+            .circular {
+                display: block;
+                margin: auto;
+	            width: 400px;
+	            height: 400px;
+	            border-radius: 200px;
+	            -webkit-border-radius: 200px;
+	            -moz-border-radius: 200px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	            background: url(photo.jpg) no-repeat;
+	        }
+
+            .gap {
+                height: 50%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-image: url("background2.jpg");
+            }
+
+            .about {
+                position: absolute;
+                top: 260%;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            .contacts {
+                position: relative;
+                bottom: 40px;
+                left: 0;
+                width: 100%;
+                height: 40px;
+                font-size: 20px;
+                padding-top: 10px;
+                font-family: Arial;
+                background-color: rgba(0, 0, 0, 0.05);
+                text-align: center;
+            }
+
+            .content-selector {
+                height: 110%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
