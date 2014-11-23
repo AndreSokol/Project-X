@@ -13,3 +13,5 @@ $(window).bind('scroll', function(){
     }
     fading.css('opacity',opacity);
 });
+
+$("#import").load("gallery/index.html");

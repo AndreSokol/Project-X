@@ -112,7 +112,7 @@
 
             .contacts {
                 position: absolute;
-                bottom: -260%;
+                bottom: -410%;
                 left: 0;
                 width: 100%;
                 height: 40px;
@@ -131,4 +131,8 @@
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
+            }
+
+            #import {
+                height: 60%;
             }
