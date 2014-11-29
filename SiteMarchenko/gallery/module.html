@@ -55,6 +55,7 @@
                 $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
                 $AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
                 $AutoPlayInterval: 2500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
                 $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
                     $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
                     $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
@@ -76,7 +77,7 @@
 
             var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 
-            //responsive code begin
+            /*//responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizes
 			function ScaleSlider() {
         	var windowWidth = $(window).width();
@@ -104,12 +105,13 @@
     	}
     	else {
         	$(window).bind("orientationchange", ScaleSlider);
-    	}
+    	}*/
     	//responsive code end
-            /*function ScaleSlider() {
-                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+            function ScaleSlider() {
+                //var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+				var parentWidth = (window).height() / 6 * 8;
                 if (parentWidth)
-                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 800));
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth*0.8, 800));
                 else
                     window.setTimeout(ScaleSlider, 30);
             }
@@ -118,12 +120,9 @@
             $(window).bind("load", ScaleSlider);
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end*/
+            //responsive code end
         });
     </script>
-	
-	<div class="make_bg_cool"></div>
-	
 	<div class="outer_container">
 	<div id="slider1_container" style="position: relative; width: 800px; height: 600px; background-color: #000; overflow: hidden; ">
         <div u="loading" style="position: absolute; top: 0px; left: 0px;">
