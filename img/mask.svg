@@ -7,42 +7,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
    width="400"
    height="400"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="mask.svg">
+   id="svg2">
   <defs
-     id="defs4">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective3771" />
-  </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffff29"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.99"
-     inkscape:cx="349.31323"
-     inkscape:cy="168.18182"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="706"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     id="defs4" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -56,14 +26,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-652.36218)">
+     transform="translate(0,-652.36218)"
+     id="layer1">
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
-       d="m -0.19926991,652.46221 0,399.99999 399.99999991,0 0,-399.99999 -399.99999991,0 z m 200.65624991,0.0937 c 110.05571,0 199.28125,89.19429 199.28125,199.25 0,110.05571 -89.22554,199.28129 -199.28125,199.28129 -110.055711,0 -199.2812499,-89.22558 -199.2812499,-199.28129 0,-110.05571 89.2255389,-199.25 199.2812499,-199.25 z"
+       d="m 399.75,-9.09375 0,9.1875 -399.9375,0 0,400 399.9375,0 0,2.4375 34.59375,0 0,-411.625 -34.59375,0 z M 200.46875,0.1875 c 110.05571,0 199.28125,89.19429 199.28125,199.25 0,110.05571 -89.22554,199.28125 -199.28125,199.28125 C 90.413039,398.71875 1.1875,309.49321 1.1875,199.4375 1.1875,89.38179 90.413039,0.1875 200.46875,0.1875 z"
+       transform="translate(0,652.36218)"
        id="path2993"
-       inkscape:connector-curvature="0" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
   </g>
 </svg>
