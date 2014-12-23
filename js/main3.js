@@ -13,3 +13,12 @@ $(window).bind('scroll', function(){
     }
     fading.css('opacity',opacity);
 });
+
+$( "#port" ).click(function() {
+  $( ".port_gal" ).animate({
+    height:"toggle"
+  }, 500, function() {});
+});
+
+
+
