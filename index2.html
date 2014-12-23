@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
        <link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300|Open+Sans:600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="style4.css">
+        <link rel="stylesheet" href="style3.css">
     </head>
 
     <body>
@@ -12,7 +12,7 @@
         <div class="header"><h1 style="font-size:5.5em;">СЕРГЕЙ МАРЧЕНКО</h1></div>
         <div class="information">
            <div class="inner-wrapper-5">
-               <h2>События</h2>
+               <red><h2>События</h2></red>
                <hr>
                <h3><red>14:31</red> Выставка на Луне</h3>
                <p>Сегодня я со своей выставкой выступаю на луне, буду рад всех видеть. Бесплатный вфод и печеньки</p>
@@ -30,194 +30,41 @@
             <h1 style="position:relative;top:35%;">НЕМНОГО О СЕБЕ</h1>
         </div>
         <div class="about"><div class="inner-wrapper-5" style="margin-right:40%;">
-            <h2>О себе</h2>
+            <red><h2>О себе</h2></red>
             <h3  style="font-size:1.5em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iusto delectus quae aliquam dolore hic voluptatem dolor. Ex harum numquam quibusdam, voluptates cupiditate iste iure doloremque dolorem dolores veniam velit aut eos deserunt, minima atque, eveniet ipsa quo incidunt animi nesciunt! Ex suscipit repudiandae dolorum sequi quisquam nulla rem, placeat et aut voluptatem, alias quidem, ipsam ducimus soluta est amet!</h3>
            <div class="photo-wrap"><div class="circular"></div><h4>Сергей Марченко</h4></div>
            
         </div>
         </div>
         <div class="content-selector" style="height:100%;"></div>
-        <div class="gap" style="background-image: url('background3.jpg');"><h1 style="position:relative; top:35%;">Мои работы</h1></div>
-        <div class="about" style="top:410%; color:white; background-color:black;"><div class="inner-wrapper-5" style="margin-right:40%;margin-top:2%;margin-bottom:2%;">
-            <h2>Галерея</h2>
+        <div class="gap" style="background-image: url('background3.jpg');">
+			<h1 style="position:relative; top:35%;">Мои работы</h1>
+		</div>
+        <div class="about" style="top:410%;"><div class="inner-wrapper-5" style="margin-right:40%;">
+            <red><h2>Галерея</h2></red>
             </div>
         <div id="import">
-			
-			
-			<!--               -->
-            <!-- slider thingy -->
-			<!--               -->
-			
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="gallery/slider-master/js/jssor.js"></script>
-    <script type="text/javascript" src="gallery/slider-master/js/jssor.slider.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            var _SlideshowTransitions = [
-				//Shift LR
-                { $Duration: 2000, x: 1, $Easing: { $Left: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Brother: { $Duration: 2000, x: -1, $Easing: { $Left: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 } }
-            ];
-
-            var options = {
-                $FillMode: 1,
-//[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
-                $DragOrientation: 1,
-//[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-                $AutoPlay: true,
-//[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-                $AutoPlayInterval: 5000,
-//[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-                $SlideshowOptions: {
-//[Optional] Options to specify and enable slideshow or not
-                    $Class: $JssorSlideshowRunner$,      //[Required] Class to create instance of slideshow
-                    $Transitions: _SlideshowTransitions, //[Required] An array of slideshow transitions to play slideshow
-                    $TransitionsOrder: 1,                //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
-                    $ShowLink: true                      //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
-                },
-
-                $BulletNavigatorOptions: {
-					//[Optional] Options to specify and enable navigator or not
-                    $Class: $JssorBulletNavigator$,
-					//[Required] Class to create navigator instance
-                    $ChanceToShow: 2,
-					//[Required] 0 Never, 1 Mouse Over, 2 Always
-                    $AutoCenter: 1,
-					//[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                    $Steps: 1,
-					//[Optional] Steps to go for each navigation request, default value is 1
-                    $Lanes: 1,
-					//[Optional] Specify lanes to arrange items, default value is 1
-                    $SpacingX: 10,
-					//[Optional] Horizontal space between each item in pixel, default value is 0
-                    $SpacingY: 10,
-					//[Optional] Vertical space between each item in pixel, default value is 0
-                    $Orientation: 1
-					//[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
-                }
-            };
-
-            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-
-            //responsive resize code begin
-			function ScaleSlider() {
-        	var windowWidth = $("#import").width();
-
-        	if (windowWidth) {
-            	var windowHeight = $("#import").height();
-            	var originalWidth = jssor_slider1.$GetOriginalWidth();
-            	var originalHeight = jssor_slider1.$GetOriginalHeight();
-				
-            	var scaleWidth = windowWidth;
-            	if (originalWidth / windowWidth < originalHeight / windowHeight) {
-                	scaleWidth = Math.ceil(windowHeight / originalHeight * originalWidth);
-            	}
-
-            	jssor_slider1.$SetScaleWidth(scaleWidth);
-        	}	
-        	else
-            	window.setTimeout(ScaleSlider, 30);
-    	}
-
-    	ScaleSlider();
-
-    	if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-        	$(window).bind('resize', ScaleSlider);
-    	}
-    	else {
-        	$(window).bind("orientationchange", ScaleSlider);
-    	}
-    	//responsive code end
-        });
-    </script>
-	
-	<div class="outer_container">
-	<div id="slider1_container" style="position: relative; width: 800px; height: 600px; background-color: #000; overflow: hidden; margin:auto;">
-        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;"></div>
-            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center; top: 0px; left: 0px;width: 100%;height:100%;"></div>
-        </div>
-        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 600px;
-            overflow: hidden;">
-            <div>
-                <a u=image href="#"><img src="img/paint/01.jpg" /></a>
+            <h2 id="port" style="margin-left:5%; margin-bottom:1%; margin-right:1%;">Портрет</h2>
+            <div class="port_gal">
+                <div class="img_container"><img src="img/paint/01.jpg" alt=""><img src="img/paint/02.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paint/03.jpg" alt=""><img src="img/paint/04.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paint/06.jpg" alt=""><img src="img/paint/05.jpg" alt=""></div>
             </div>
-            <div>
-                <a u=image href="#"><img src="img/paint/02.jpg" /></a>
-            </div>
-            <div>
-                <a u=image href="#"><img src="img/paint/03.jpg" /></a>
-            </div>
-            <div>
-                <a u=image href="#"><img src="img/paint/04.jpg" /></a>
-            </div>
-            <div>
-                <a u=image href="#"><img src="img/paint/05.jpg" /></a>
-            </div>
-            <div>
-                <a u=image href="#"><img src="img/paint/06.jpg" /></a>
-            </div>
-            <div>
-                <a u=image href="#"><img src="img/paint/07.jpg" /></a>
-            </div>
-            <div>
-                <a u=image href="#"><img src="img/paint/08.jpg" /></a>
-            </div>
-            <div>
-                <a u=image href="#"><img src="img/paint/09.jpg" /></a>
-            </div>
-            <div>
-                <a u=image href="#"><img src="img/paint/10.jpg" /></a>
-            </div>
-        </div>
-
-        <!-- Bullet Navigator Skin Begin -->
-        <style>
-            .jssorb13 div, .jssorb13 div:hover, .jssorb13 .av {
-                /*background: url(img/slider/b21.png) no-repeat;*/
-                overflow: hidden;
-                cursor: pointer;
-            }
-
-            .jssorb13 div {
-                background-position: -5px -5px;
-            }
-
-            .jssorb13 div:hover, .jssorb13 .av:hover {
-                background-position: -35px -5px;
-            }	
-
-            .jssorb13 .av {
-                background-position: -65px -5px;
-            }
-
-            .jssorb13 .dn, .jssorb13 .dn:hover {
-                background-position: -95px -5px;
-            }
-        </style>
-        <!-- bullet navigator container -->
-        <div u="navigator" class="jssorb13" style="position: absolute; bottom: 16px; right: 6px; left:25px!important;">
-            <!-- bullet navigator item prototype -->
-            <div u="prototype" style="POSITION: absolute; WIDTH: 21px; HEIGHT: 21px;"></div>
-        </div>
-        <!-- Bullet Navigator Skin End -->
-    </div>
-	</div>
-			
-			
-			<!--                   -->
-            <!-- slider thingy end -->
-			<!--                   -->
-			
+            <h2 style="margin-left:5%; margin-bottom:1%; margin-right:1%;">Пейзаж</h2>
+            <h2 style="margin-left:5%; margin-bottom:1%; margin-right:1%;">Натюрморт</h2>
+            <h2 style="margin-left:5%; margin-bottom:1%; margin-right:1%;">Историческая живопись</h2>
+            <h2 style="margin-left:5%; margin-bottom:1%; margin-right:1%;">На заказ</h2>
+            
         </div>
         </div>
         
         
-        <div class="contacts" style="color:white;">Мой Телефон +007-Agent-Bond, Моя почта Agent@bondmail.gb</div>
+        <div class="contacts">Мой Телефон +007-Agent-Bond, Моя почта Agent@bondmail.gb</div>
         
         <script src="js/jquery-2.1.0.min.js"></script>
         <script src="js/main3.js"></script>
         
     </body>
+
+
 </html>
