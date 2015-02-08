@@ -5,14 +5,14 @@
        <link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300|Open+Sans:600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style3.css">
-        <link rel="stylesheet" media="(min-width: 1024px)" href="large-screen-styles.css">
-        <link rel="stylesheet" media="(min-width:361px) and (max-width: 1024px)" href="medium-screen-styles.css">
-        <link rel="stylesheet" media="a(max-width: 360px)" href="large-screen-styles.css">
+        <link rel="stylesheet" media="(min-width: 1030px)" href="large-screen-styles.css">
+        <link rel="stylesheet" media="(min-width: 416px) and (max-width: 1030px)" href="medium-screen-styles.css">
+        <link rel="stylesheet" media="(max-width: 415px)" href="small-screen-styles.css">
     </head>
 
     <body>
         <div class="bc-img"></div>
-        <div class="header"><h1 style="font-size:5.5em;">СЕРГЕЙ МАРЧЕНКО</h1></div>
+        <div class="header"><h1>СЕРГЕЙ МАРЧЕНКО</h1></div>
         <div class="information">
            <div class="inner-wrapper-5">
                <red><h2>События</h2></red>
@@ -32,9 +32,12 @@
         <div class="gap">
             <h1 style="position:relative;top:35%;">НЕМНОГО О СЕБЕ</h1>
         </div>
-        <div class="about"><div class="inner-wrapper-5">
+        <div class="about"><div class="inner-wrapper-5" id="about-wrap">
             <red><h2>О себе</h2></red>
-            <h3  style="font-size:3vmin;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iusto delectus quae aliquam dolore hic voluptatem dolor. Ex harum numquam quibusdam, voluptates cupiditate iste iure doloremque dolorem dolores veniam velit aut eos deserunt, minima atque, eveniet ipsa quo incidunt animi nesciunt! Ex suscipit repudiandae dolorum sequi quisquam nulla rem, placeat et aut voluptatem, alias quidem, ipsam ducimus soluta est amet!</h3>
+            <h3  >Сергей Марченко - молодой и талантливый художник. Работая в разных жанрах, он продолжает традиции русского реализма.
+Получив классическое художественное образование в Московской средней художественной школе им. Томского, а затем в МГХАИ им. Сурикова на факультете станковой живописи в мастерской профессора Забелина, художник приобрел неоценимый опыт, дополненный работой зарубежом.
+Обладатель премии РОСХ за лучший диплом и ордена "Служение искусству" 1й степени, С.Марченко сотрудничает с арт-галереями разных стран и участвует во многих выставках. 
+Художник находится в постоянном творческом поиске, вкладывая в полотна свое уникальное виденье мира.</h3>
            <div class="photo-wrap">
 			   <img src="img/mask.svg" style="width:100%;position:absolute;">
 			   <img src="photo.jpg" style="width:100%;">
@@ -46,22 +49,35 @@
         <div class="gap" style="background-image: url('background3.jpg');"><h1 style="position:relative; top:35%;">Мои работы</h1></div>
         <div class="about" style="top:410%;"><div class="inner-wrapper-5">
             <red><h2 style="margin-bottom:4%;">Галерея</h2></red>
-            <h3 id="port">Портрет</h2>
-            <div class="port_gal">
-                <div class="img_container"><img src="img/paint/01.jpg" alt=""><img src="img/paint/02.jpg" alt=""></div>
-                <div class="img_container"><img src="img/paint/03.jpg" alt=""><img src="img/paint/04.jpg" alt=""></div>
-                <div class="img_container"><img src="img/paint/06.jpg" alt=""><img src="img/paint/05.jpg" alt=""></div>
+            <h3 id="port">Портрет</h3>
+            <div class="gal" id="port_gal">
+                <div class="img_container"><img src="img/paintings/po/01.jpg" alt=""><img src="img/paintings/po/02.jpg" alt=""><img src="img/paintings/po/03.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paintings/po/04.jpg" alt=""><img src="img/paintings/po/05.jpg" alt=""><img src="img/paintings/po/06.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paintings/po/07.jpg" alt=""><img src="img/paintings/po/08.jpg" alt=""><img src="img/paintings/po/09.jpg" alt=""></div>
             </div>
-            <h3>Пейзаж</h2>
-            <h3>Натюрморт</h2>
-            <h3>Историческая живопись</h2>
-            <h3>На заказ</h2>
-            
+            <h3 id="pe">Пейзаж</h3>
+            <div class="gal" id="pe_gal">
+                <div class="img_container"><img src="img/paintings/pe/01.jpg" alt=""><img src="img/paintings/pe/02.jpg" alt=""><img src="img/paintings/pe/03.jpg" alt=""><img src="img/paintings/pe/10.jpg" alt=""><img src="img/paintings/pe/11.jpg" alt=""><img src="img/paintings/pe/12.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paintings/pe/04.jpg" alt=""><img src="img/paintings/pe/05.jpg" alt=""><img src="img/paintings/pe/06.jpg" alt=""><img src="img/paintings/pe/13.jpg" alt=""><img src="img/paintings/pe/14.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paintings/pe/07.jpg" alt=""><img src="img/paintings/pe/08.jpg" alt=""><img src="img/paintings/pe/09.jpg" alt=""><img src="img/paintings/pe/15.jpg" alt=""><img src="img/paintings/pe/16.jpg" alt=""></div>
+            </div>
+            <h3 id="na">Натюрморт</h3>
+            <div class="gal" id="na_gal">
+                <div class="img_container"><img src="img/paintings/na/01.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paintings/na/02.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paintings/na/03.jpg" alt=""></div>
+            </div>
+            <h3 id="st">Станковая живопись</h3>
+            <div class="gal" id="st_gal">
+                <div class="img_container"><img src="img/paintings/st/01.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paintings/st/04.jpg" alt=""><img src="img/paintings/st/06.jpg" alt=""></div>
+                <div class="img_container"><img src="img/paintings/st/07.jpg" alt=""><img src="img/paintings/st/08.jpg" alt=""></div>
+            </div>
         </div>
         </div>
         
         
-        <div class="contacts">Мой Телефон +007-Agent-Bond, Моя почта Agent@bondmail.gb</div>
+        <div class="contacts"><p>Мой Телефон +007-Agent-Bond, Моя почта Agent@bondmail.gb</p></div>
         
         <script src="js/jquery-2.1.0.min.js"></script>
         <script src="js/main3.js"></script>
