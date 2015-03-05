@@ -49,27 +49,3 @@ $( "#st" ).click(function() {
   $( "#st_gal" ).animate({
     height:"toggle"
   }, 5, function() {});
-
-
-$('img').click(function () {
-
-        var o=$(this).parent();
-
-        var url=o.find('img').attr('src');
-
-        var html='<a href="#" class="clone"><img src="'+url+'" /></a>'
-
-        o.append(html);
-
-        o=o.find('.clone');
-
-        o.animate({width:'200%',height:'200%'});
-
-        o.click(function () {
-
-            $(this).remove();
-
-        });
-
-    });
-
